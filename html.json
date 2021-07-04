@@ -1,0 +1,63 @@
+{
+	// Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"bootstrap_ajax_template":{
+		"prefix":"bootstrap_template",
+		"body":[
+			"{% load static %}",
+			"<!DOCTYPE html>",
+			"<html lang=\"ja\">",
+			"\t<head>",
+			"\t\t<meta charset=\"UTF-8\" />",
+			"\t\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />",
+			"\t\t<meta name=\"viewport\" content=\"width-device-width, initial-scale=1.0\" />",
+			"\t\t<title>タブタイトル</title>",
+			"\t\t<link href=\"{%static 'css/bootstrap.min.css' %}\" rel=\"stylesheet\" />",
+			"\t\t<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">",
+			"\t</head>",
+			"\t<body>",
+			"\t\t\t<div class=\"container\">",
+			"\t\t\t<div class=\"row\">",
+			"\t\t\t\t<div class=\"col-12\">",
+			"\t\t\t\t<div class=\"col-10\">",
+			"\t\t\t\t\t<div class=\"jumbotron mt-3\" style=\"width: 100%;\">",
+			"\t\t\t\t\t\t<font face=\"Impact\"><h1 class=\"display-4\">TITLE</h1></font>",
+			"\t\t\t\t\t\t<hr class=\"my-4\" />",
+			"\t\t\t\t\t\t<font size=\"5\">ページ内プチタイトル</font><br>",
+			"\t\t\t\t\t\t<br>",
+			"\t\t\t\t\t\t<p>本文</p>",
+			"\t\t\t\t\t\t<a href=\"https://ja.wikipedia.org/wiki/%E9%BB%84%E9%87%91%E6%AF%94\" target=\"blank\">他のリンクに飛ぶ。</a>",
+			"\t\t\t\t\t\t<br><br>",
+			"\t\t\t\t\t\t<input type=\"number\" size=\"50\" id=\"input_form\">",
+			"\t\t\t\t\t\t<button type=\"button\" onclick=\"clickBtn()\">ボタン</button>",
+			"\t\t\t\t\t\t<br><br>",
+			"\t\t\t\t\t\t<font size=\"4\"><div id=\"result\">出力説明</div></font>",
+			"\t\t\t\t\t\t<!--JavaScript & XML (Extensible Markup Language,HTMLの仲間))を記述。-->",
+			"\t\t\t\t\t\t<script>",
+			"\t\t\t\t\t\t</script>",
+			"\t\t\t\t\t\t<br><br>",
+			"\t\t\t\t\t\t<a href=\"{% url 'myapp:test2' %}\">他リンクに戻る</a>",
+			"\t\t\t\t\t\t</div>",
+			"\t\t\t\t\t</div>",
+			"\t\t\t\t\t<div class=\"col-1\"></div>",
+			"\t\t\t\t</div>",
+			"\t\t\t</div>",
+			"\t\t<script src=\"{%static 'js/jquery-3.6.0.js' %}\"></script>",
+			"\t\t<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\" integrity=\"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1\" crossorigin=\"anonymous\"></script>",
+			"\t\t<script src=\"{%static 'js/bootstrap.min.js' %}\"></script>",
+			"\t</body>",
+			"</html>",
+		]
+	}
+}
